@@ -228,6 +228,7 @@ function formatTweet($tweet) {
 
 <section id="intro">
 	<h1>We design services to make them easier <span class="break">and more effective for everyone</span></h1>
+	<img class="fullbackground" src="img/banner.jpg" />
 	<div class="gradient"></div>
 </section>
 
