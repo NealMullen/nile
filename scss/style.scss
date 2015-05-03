@@ -74,18 +74,18 @@ header{
 	}
 }
 #logo{
-	@include rem(width, 75);
-	height:auto;
+  @include rem(width, 75);
+  height:auto;
   margin: auto;
   position: absolute;
-	top: 0; 
-	bottom: 0; 
+  top: 0; 
+  bottom: 0; 
 }
 .full_site_notice{
 	display:none;
 }
 #intro{
-	position:relative;
+  position:relative;
   background-image:  url(../img/banner_480.jpg);
   background-size:   cover;                    
   background-repeat: no-repeat;
@@ -93,6 +93,7 @@ header{
   width:100%;
   text-align: center;
   @include rem(padding, 200 0 70);
+
 }
 .gradient{
   position:absolute;
@@ -162,7 +163,7 @@ header{
 	}
 }
 .semicircle{
-	position:absolute;
+  position:absolute;
   left: 0;
   right: 0;
   z-index: 10;
@@ -180,6 +181,8 @@ header{
   	@include rem(margin-top, 32);
   }
 }
+
+
 
 
 footer{
@@ -216,6 +219,7 @@ small{
 	width:100%;
 	@include rem(margin-bottom, 30);
 }
+
 .social_list{
 	@include rem(margin-top, 24);
 	li{
@@ -282,6 +286,19 @@ input[type="submit"]{
 	&.success{
 		background:$green; 
 		color:$dark-blue;}
+}
+
+
+.lt-ie9 {
+	#intro{
+  	background-image:  url(../img/banner.jpg);
+  }
+  .semicircle{
+  	display: none;
+  }
+  .column{
+		width:25%;
+	}
 }
 
 @media screen and (min-width:480px){
@@ -383,3 +400,4 @@ input[type="submit"]{
 	-webkit-align-items: center;
 	align-items: center;
 }
+
