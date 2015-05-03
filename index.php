@@ -208,6 +208,7 @@ function formatTweet($tweet) {
 	<title>Nile</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" href="css/style.css">
+	<script src="js/modernizr.js"></script>
 	<script src="//use.typekit.net/jwv1yje.js"></script>
 	<script>try{Typekit.load();}catch(e){}</script>
 </head>
