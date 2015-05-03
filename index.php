@@ -343,7 +343,6 @@ function formatTweet($tweet) {
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
-<script src="js/swiper.min.js"></script>
-<script src="js/script.js"></script>
+<script src="js/script.min.js"></script>
 </body>
 </html>
