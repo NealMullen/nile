@@ -201,7 +201,8 @@ function formatTweet($tweet) {
 	return $prettyTweet;
 }?>
 <!DOCTYPE html>
-<!--[if lt IE 9]> <html lang="en" class="lt-ie9"> <![endif]-->
+<!--[if lt IE 9]> <html lang="en" class="lt-ie9 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
 <head>
 	<meta charset="utf-8">
