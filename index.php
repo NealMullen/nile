@@ -207,11 +207,16 @@ function formatTweet($tweet) {
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<title>Nile</title>
+	<meta name="keywords" content="Experience design, service design, usability, usability testing, user experience, Information architecture, accessibility audits" />
+	<meta name="description" content="Nile experience and service design create user experience blueprints for products, services and customer flows." />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" href="css/style.css">
 	<script src="js/modernizr.js"></script>
 	<script src="//use.typekit.net/jwv1yje.js"></script>
 	<script>try{Typekit.load();}catch(e){}</script>
+
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="apple-touch-icon" href="favicon.gif"/>
 </head>
 <body>
 
@@ -226,11 +231,20 @@ function formatTweet($tweet) {
 	</div>
 </header>
 
+<!--<div class="parallax-container" data-parallax="scroll" data-position="top" data-speed="0.0" data-bleed="10" data-image-src="./img/banner.jpg" data-natural-width="1280" data-natural-height="580" style="height: 580px;">
+	<div class="container">
+		<h1>We design services to make them easier <span class="break">and more effective for everyone</span></h1>
+	</div>
+	<div class="gradient"></div>
+	</div>-->
+
+
 <section id="intro">
 	<h1>We design services to make them easier <span class="break">and more effective for everyone</span></h1>
 	<img class="fullbackground" src="img/banner.jpg" />
 	<div class="gradient"></div>
 </section>
+
 
 <section class="blk_section blk_white">
 	<div class="container">
@@ -247,7 +261,7 @@ function formatTweet($tweet) {
 	<div class="semicircle"><img src="img/arrow.svg" alt="Arrow icon"/></div>
 </section>
 
-<section class="blk_section blk_white">
+<section class="blk_section blk_white" id="work_at_nile">
 	<div class="container">
 		<h2 class="heading">Work at Nile</h2>
 		<p>We value individuality and teamwork in equal measure, so we are always on the lookout for skilled and motivated team members. Is that you? Check out <a href="#" title="View our current job vacancies">our job vacancies</a>. We&rsquo;d love to hear from you.</p>
@@ -295,11 +309,12 @@ function formatTweet($tweet) {
 		<div class="column">
 				<h3>London</h3>
 					<ul>
+					<li>The Trampery</li>
 					<li>13-19 Bevenden Street</li>
 					<li>London</li>
 					<li><a href="https://maps.google.com/maps?q=N1 6AS" target="_blank" title="Search for us on Google Maps">N1 6AS</a></li>
 					<li><a href="mailto:hello@nilehq.com" title="Send us an email" class="email">hello@nilehq.com</a></li>
-					<li><a href="tel:+44 020 2220 5671" title="Give us a call">+44 020 2220 5671</a></li>
+					<li><a href="tel:020 3393 0930" title="Give us a call">020 3393 0930</a></li>
 				</ul>
 			</div>
 			<div class="column">

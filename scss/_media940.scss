@@ -1,0 +1,42 @@
+@media screen and (min-width:940px){
+	#intro{
+	@include rem(padding, 424 0 70);
+//background-image:  url(../img/banner.jpg);
+background: url(../img/banner.jpg) no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+// filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+//-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+
+&.bg-black{
+	background: url(../img/banner_blur.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+
+
+
+.break{
+	display: block;
+}
+}
+a:hover,a:focus,.blk_section a:hover, .blk_section a:focus{
+	color:#1c81b3;
+}
+.social_list li:hover{
+	opacity:0.5;
+}
+
+footer a:hover{
+	color:inherit;
+	&.email{
+		color:$green;
+		text-decoration:underline;
+	}
+}
+}

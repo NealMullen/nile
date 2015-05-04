@@ -1,3 +1,6 @@
+pic = new Image();
+pic.src="img/banner_blur.jpg";
+
 //http://stackoverflow.com/questions/3629183/why-doesnt-indexof-work-on-an-array-ie8
 if (!Array.prototype.indexOf)
 {
@@ -296,22 +299,10 @@ if (!oldIE) {
 	});
 }
 
-if (!Modernizr.svg) {
-    var imgs = document.getElementsByTagName('img');
-    var svgExtension = /.*\.svg$/
-    var l = imgs.length;
-    for(var i = 0; i < l; i++) {
-        if(imgs[i].src.match(svgExtension)) {
-            imgs[i].src = imgs[i].src.slice(0, -3) + 'png';
-            //console.log(imgs[i].src);
-        }
-    }
-}
-// Scroll-to contact section
-$("#contact_link").click(function() {
-    $("html, body").animate({ scrollTop: $("#contact").offset().top }, 750);
-    return false;
-});
+
+
+
+
 
 // Mailchimp
 (function($) {
@@ -324,12 +315,68 @@ $("#contact_link").click(function() {
 	fnames[2]='LNAME';
 	ftypes[2]='text';
 }(jQuery));
+
+
+
+
+$(document).ready(function() {
+
+  function goTo(el) {
+   var height = $("header").outerHeight();
+  $("html, body").animate({ scrollTop: $(el).offset().top - height }, 750);    
+}
+
+// Scroll-to contact section
+$("#contact_link").click(function() {
+    goTo("#contact");
+    return false;
+});
+// Scroll-to contact section
+$(".semicircle").click(function() {
+    goTo("#work_at_nile");
+    return false;
+});
+
+
+
+
+  $('#mce-EMAIL').blur(function() {
+      $("#mc_embed_signup").removeClass('focus');
+    })
+    .focus(function() {
+      $("#mc_embed_signup").addClass('focus');
+    });
+
+
+
+
+if (!Modernizr.touch) { 
+
+  $(document).scroll(function(){
+
+      var st =$(this).scrollTop();
+
+      var el = $('#intro'), top = $('h1').offset().top - st;
+      if (top < 300 && !el.is('.bg-black')){
+          $(el).addClass('bg-black');
+      }
+      if (top > 300 && el.is('.bg-black')){
+          $(el).removeClass('bg-black');
+      }  
+
+      var o = (($('h1').offset().top - st) / 200);
+      $('h1').css({ 'opacity' : o });
+
+  });
+
+} 
+
 var $mcj = jQuery.noConflict(true);
 // Customised Mailchimp Message positioning
 // http://designshack.net/articles/css/custom-mailchimp-email-signup-form/
 $(function () {
   var $form = $('#mc-embedded-subscribe-form');
-	$('#mc-embedded-subscribe').on('click', function(event) {
+  $('#mc-embedded-subscribe').on('click', function(event) {
   if(event) event.preventDefault();
     register($form);
   });
@@ -355,4 +402,18 @@ function register($form) {
     }
   });
 }
+
+
+if (!Modernizr.svg) {
+    var imgs = document.getElementsByTagName('img');
+    var svgExtension = /.*\.svg$/
+    var l = imgs.length;
+    for(var i = 0; i < l; i++) {
+        if(imgs[i].src.match(svgExtension)) {
+            imgs[i].src = imgs[i].src.slice(0, -3) + 'png';
+            //console.log(imgs[i].src);
+        }
+    }
+}
+  });
 

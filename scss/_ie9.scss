@@ -1,0 +1,45 @@
+.lt-ie9 {
+	.container{
+		width:1180px;
+		header &{
+			width:1280px;
+		}
+		.blk_section & {
+			width:740px;
+		}
+		.blk_twitter & {
+			width:820px;
+		}
+	}
+	#intro{
+		@include rem(padding, 400 0 70);
+  	background:none;
+  }
+ 	.fullbackground{
+    position:absolute;
+    z-index:-1;
+    top:0;
+    left:0;
+    width:100%; /* alternative: right:0; */
+    height:100%; /* alternative: bottom:0; */
+	}
+  .semicircle{
+  	display: none;
+  }
+  .column{
+		width:25%;
+	}
+	#logo{
+	  top: 0; 
+	  left: 0; 
+	  bottom: 0; 
+	  right: 0;
+	}
+	.full_site_notice{
+		line-height:75px;
+		display: inline;
+	}
+	.break{
+		display: block;
+	}
+}
