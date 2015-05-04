@@ -115,7 +115,7 @@ header{
 
 #intro{
 	position:relative;
-	background: url(../img/banner.jpg) no-repeat center center fixed; 
+	background: url(../img/banner_480.jpg) no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -128,13 +128,13 @@ header{
 	// background-repeat: no-repeat;
 	//background-position: center center;  
 
-		&.blurred{
-			background: url(../img/banner_blur.jpg) no-repeat center center fixed; 
-			-webkit-background-size: cover;
-			-moz-background-size: cover;
-			-o-background-size: cover;
-			background-size: cover;
-		}
+		//&.blurred{
+		//	background: url(../img/banner_blur.jpg) no-repeat center center fixed; 
+			//-webkit-background-size: cover;
+			//-moz-background-size: cover;
+			//-o-background-size: cover;
+			//background-size: cover;
+		//}
 }
 
 .gradient{
