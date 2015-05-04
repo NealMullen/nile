@@ -127,9 +127,13 @@ header{
 	// background-size:   cover;                    
 	// background-repeat: no-repeat;
 	//background-position: center center;  
-
+	
 		&.blurred{
 			background: url(../img/banner_blur.jpg) no-repeat center center fixed; 
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
 		}
 }
 
