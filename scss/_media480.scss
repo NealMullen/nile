@@ -2,4 +2,17 @@
 	.column:nth-child(1),.column:nth-child(2){
 		width:50%;
 	}
+	h1{
+		@include rem(font-size, 60);
+	}
+	h2{
+		@include rem(font-size, 45);
+	}
+
+	#intro{
+		@include rem(padding, 200 0 70);
+	}
+	.gradient{
+		height:50%;
+	}
 }
