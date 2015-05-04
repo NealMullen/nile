@@ -42,8 +42,9 @@
 	.break{
 		display: block;
 	}
-	input.email{
+}
+.ie9 input.email,.lt-ie9 input.email{
 	float:left;
 	background:$dark-blue;
-}
+	color:$white;
 }
