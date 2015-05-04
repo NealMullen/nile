@@ -232,29 +232,20 @@ function formatTweet($tweet) {
 	</div>
 </header>
 
-<!--<div class="parallax-container" data-parallax="scroll" data-position="top" data-speed="0.0" data-bleed="10" data-image-src="./img/banner.jpg" data-natural-width="1280" data-natural-height="580" style="height: 580px;">
-	<div class="container">
-		<h1>We design services to make them easier <span class="break">and more effective for everyone</span></h1>
-	</div>
-	<div class="gradient"></div>
-	</div>-->
-
-
 <section id="intro">
 	<h1>We design services to make them easier <span class="break">and more effective for everyone</span></h1>
 	<img class="fullbackground" src="img/banner.jpg" />
 	<div class="gradient"></div>
 </section>
 
-
-<section class="blk_section blk_white">
+<section class="blk_section blk_white" id="new_website">
 	<div class="container">
 		<h2 class="heading">We&rsquo;re working on a new website</h2>
 		<p>We&rsquo;ve been very busy designing innovative new services for our clients, so our website is now a little out of date. We&rsquo;re working on a shiny new one. Meanwhile, the <a href="#" title="View our old website">old one is here</a> if you need it.</p>
 	</div>	
 </section>
 
-<section class="blk_section blk_blue">
+<section class="blk_section blk_blue" id="what_we_do">
 	<div class="container">
 		<h2 class="heading">What we do</h2>
 		<p>Nile is an <b>experience and service design consultancy</b>. We design in partnership with people, businesses and governments to bring services to life - services built to thrive in an increasingly digital world. And we ensure the development of culture and capabilities to sustain them.</p>
@@ -269,7 +260,7 @@ function formatTweet($tweet) {
 	</div>	
 </section>
 
-<section class="blk_section blk_twitter">
+<section class="blk_section blk_twitter" id="nile_on_twitter">
 	<div class="container">
 		<img src="img/twitter_bird.svg" alt="Arrow icon"/>
 		<p class="heading">@NileSays on Twitter</p>

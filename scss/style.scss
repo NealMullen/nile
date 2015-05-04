@@ -1,7 +1,10 @@
+/*! Desc: CSS for NileHQ, Author: Neal Mullen, Author URI: http://nealmullen.me */
 
 @import 'vars';
 @import 'reset';
-html { font-size: 62.5%; } 
+html { 
+	font-size: 62.5%; 
+} 
 
 body{
 	margin:0;
@@ -9,33 +12,49 @@ body{
 	background:$dark-blue;
 	color:$white;
 	font-family: "brandon-grotesque",sans-serif, arial ;
-	font-weight:400; }
+	font-weight:400; 
+}
 
 * {
 	@include rem(font-size,20); 
-	line-height:1.25em;}
+	line-height:1.25em;
+}
 
 *,*:before,*:after{
 	-webkit-box-sizing:border-box;
 	-moz-box-sizing:border-box;
-	box-sizing:border-box}
+	box-sizing:border-box
+}
 
 
-p{ @include rem(font-size, 20); }
-a{ word-wrap: break-word; }
-b{ font-weight:700; }
-ul{ list-style:none;
-	li{ float:left; }
+//
+////
+// Text Elements
+////
+//
+p{ 
+	@include rem(font-size, 20); 
+}
+a{ 
+	word-wrap: break-word; 
+}
+b{ 
+	font-weight:700; 
+}
+ul{ 
+	list-style:none;
+	li{ 
+		float:left; }
 }
 
 h1{
 	position:relative;
 	z-index:18;
 	@include rem(font-size, 60);
-	&, .break{
-		font-weight: 300;
-		line-height: 1em;
-	}
+		&, .break{
+			font-weight: 300;
+			line-height: 1em;
+		}
 }
 h2{
 	font-weight:700;
@@ -48,6 +67,12 @@ h3{
 	@include rem(margin-bottom, 5);
 }
 
+
+//
+////
+// Header
+////
+//
 header{
 	position:fixed;
 	z-index:200;
@@ -57,71 +82,64 @@ header{
 	@include rem(padding, 0 10);
 	background: #fff;
 	background: rgba(255,255,255,0.75);
-	&, a{
-		color:#6b6b6b;
-		text-decoration:none;
-		@include rem(font-size, 20);
-	}
-	ul li{
-		@include rem(line-height, 75);
-		display: inline;
-	}
+		&, a{
+			color:#6b6b6b;
+			text-decoration:none;
+			@include rem(font-size, 20);
+		}
+		ul li{
+			@include rem(line-height, 75);
+			display: inline;
+		}
 }
+
 .menu{
 	float:right;
-	li + li{
-		@include rem(margin-left, 20);
-	}
+		li + li{
+			@include rem(margin-left, 20);
+		}
 }
-#logo{
-  @include rem(width, 75);
-  height:auto;
-  margin: auto;
-  position: absolute;
-  top: 0; 
-  bottom: 0; 
-}
-.full_site_notice{
+
+.full_site_notice, .fullbackground{
 	display:none;
 }
 
-.parallax-container{
-	position:relative;
-	text-align: center;
-
-	h1{
-		position:absolute;
-		bottom:40px;
-		left:0;
-		right:0;
-	}
+#logo{
+	@include rem(width, 75);
+	height:auto;
+	margin: auto;
+	position: absolute;
+	top: 0; 
+	bottom: 0; 
 }
+
 #intro{
-  position:relative;
-  //background-image:  url(../img/banner_480.jpg);
- // background-size:   cover;                    
- // background-repeat: no-repeat;
-  //background-position: center center;    
+	position:relative;
+	background: url(../img/banner.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width:100%;
+	text-align: center;
+	@include rem(padding, 200 0 70);
+	//background-image:  url(../img/banner_480.jpg);
+	// background-size:   cover;                    
+	// background-repeat: no-repeat;
+	//background-position: center center;  
 
-   background: url(../img/banner.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-
-
-  width:100%;
-  text-align: center;
-  @include rem(padding, 200 0 70);
+		&.blurred{
+			background: url(../img/banner_blur.jpg) no-repeat center center fixed; 
+		}
 }
+
 .gradient{
-  position:absolute;
-  bottom:0px;
-  left:0px;
-  width:100%;
-  z-index:1;
-  height:50%;
-	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	width:100%;
+	z-index:1;
+	height:50%;
 	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQwJSIgc3RvcC1jb2xvcj0iIzQ0NDQ0NCIgc3RvcC1vcGFjaXR5PSIwLjMiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjc1Ii8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
 	background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(68,68,68,0.2) 40%, rgba(0,0,0,0.75) 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(40%,rgba(68,68,68,0.2)), color-stop(100%,rgba(0,0,0,0.75))); /* Chrome,Safari4+ */
@@ -131,81 +149,90 @@ header{
 	background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(68,68,68,0.2) 40%,rgba(0,0,0,0.75) 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#bf000000',GradientType=0 ); /* IE6-8 */
 }
-.fullbackground{
-	display:none;
-}
 
-
+//
+////
+// Main Content
+////
+//
 .container{
 	margin: 0 auto;
 	max-width:1180px;
 	@include rem(padding, 0 10);
-	.blk_section & {
-		max-width:700px;
-	}
-	.blk_twitter & {
-		max-width:820px;
-	}
+		.blk_section & {
+			max-width:700px;
+		}
+		.blk_twitter & {
+			max-width:820px;
+		}
 }
 .blk_section{
 	@include rem(padding,58 0 54);
 	text-align:center;
-	.heading:after{
-		content: "";
-		display: block;
-		background:$green;
-		@include rem(width,56);
-		@include rem(height,6);
-		@include rem(margin, 16 auto 22);
-	}
-	a{
-		text-decoration:underline;
-		color: inherit;
-			&.link-hashtag{
-				font-weight:700;
-				text-decoration: none;
-			}
-	}
+		.heading:after{
+			content: "";
+			display: block;
+			background:$green;
+			@include rem(width,56);
+			@include rem(height,6);
+			@include rem(margin, 16 auto 22);
+		}
+		a{
+			text-decoration:underline;
+			color: inherit;
+				&.link-hashtag{
+					font-weight:700;
+					text-decoration: none;
+				}
+		}
 }
+
 .blk_white{
 	background:$white;
-	color:$dark-blue;}
+	color:$dark-blue;
+}
 .blk_blue{
-	background:$light-blue;}
+background:$light-blue;
+}
 .blk_twitter{
 	background: $grey;
 	color: $dark-blue;
-	.heading{
-		@include rem(margin-top, 15);
-		@include rem(font-size, 18);
-	}
+		.heading{
+			@include rem(margin-top, 15);
+			@include rem(font-size, 18);
+		}
 }
+
 .semicircle{
-  position:absolute;
-  left: 0;
-  right: 0;
-  z-index: 10;
+	position:absolute;
+	left: 0;
+	right: 0;
+	z-index: 10;
 	background:$light-blue;
-  @include rem(width, 120);
-  @include rem(height, 64);
-  @include rem(margin, 28 auto 0);
-  line-height:1em;
-  border-radius:0 0 240px 240px ;
-  -moz-border-radius:0 0 240px 240px ;
-  -webkit-border-radius:0 0 240px 240px ;  
-  img{
-  	@include rem(width, 15);
-  	@include rem(height, 15);
-  	@include rem(margin-top, 32);
-  }
-  cursor: pointer;
+	@include rem(width, 120);
+	@include rem(height, 64);
+	@include rem(margin, 28 auto 0);
+	line-height:1em;
+	border-radius:0 0 240px 240px ;
+	-moz-border-radius:0 0 240px 240px ;
+	-webkit-border-radius:0 0 240px 240px ;
+	cursor: pointer;  
+		img{
+			@include rem(width, 15);
+			@include rem(height, 15);
+			@include rem(margin-top, 32);
+		}
 }
 
 
 
-
+//
+////
+// Footer
+////
+//
 footer{
-	border-top:1px solid $white;
+border-top:1px solid $white;
 
 	p,&{
 		@include rem(font-size, 15);
@@ -213,9 +240,9 @@ footer{
 	a{
 		color: inherit;
 		text-decoration: none;
-		&.email{
-			color:$green;
-		}
+			&.email{
+				color:$green;
+			}
 	}
 	&.container{
 		@include rem(padding, 30 10 );
@@ -226,7 +253,6 @@ footer{
 		width:100%;
 	}
 }
-
 small{
 	display:block;
 	@include rem(margin-top, 25);
@@ -241,33 +267,38 @@ small{
 	@include rem(margin-bottom, 30);
 }
 
+//
+////
+// Social Icons in Footer
+////
+//
 .social_list{
 	@include rem(margin-top, 24);
-	li{ float:left;@include rem(width, 60);
-		@include rem(height, 60);
-		a{
+		li{ float:left;@include rem(width, 60);
+			@include rem(height, 60);
+				a{
 					display: block;
 					@include rem(width, 60);
-		@include rem(height, 60);
-		@include rem(line-height, 74);
-		border:1px solid $white;
-		border-radius:120px;
-		text-align:center;
+					@include rem(height, 60);
+					@include rem(line-height, 74);
+					border:1px solid $white;
+					border-radius:120px;
+					text-align:center;
+				}
+				+ li{
+					@include rem(margin-left, 10);
+				}
+				img {
+					@include rem(width, 34);
+					height:auto;
+				}
 		}
-		+ li{
-			@include rem(margin-left, 10);
-		}
-		img {
-			@include rem(width, 34);
-			height:auto;
-		}
-	}
 }
 
 input {
 	border-radius: 0;
-  -webkit-appearance: none;
-  border:none;
+	-webkit-appearance: none;
+	border:none;
 	outline:none;
 	height:30px;
 }
@@ -292,13 +323,12 @@ input[type="submit"]{
 	border:1px solid #7c93a5;
 	@include rem(padding, 6);
 	@include rem(margin-top, 10);
-
-	&:hover,&.focus{
-		border-color:$green;
-	} 
+		&:hover,&.focus{
+			border-color:$green;
+		} 
 }
 #mc_embed_signup div.mce_inline_error{
-  display:none !important;
+	display:none !important;
 }
 #notification_container{
 	margin-top:5px;
@@ -307,43 +337,42 @@ input[type="submit"]{
 .response{
 	display:block;
 	width:100%;
+	max-width:420px;
 	@include rem(padding, 6);
 	@include rem(font-size, 14);
 	border-radius:4px;
-	&.alert{
-		background:#6B0505;}
-	&.success{
-		background:$green; 
-		color:$dark-blue;}
+		&.alert{
+			background:#6B0505;}
+		&.success{
+			background:$green; 
+			color:$dark-blue;}
 }
 
 
 
 
 @import 'ie9';
-
-
 @import 'media480';
 @import 'media740';
 @import 'media940';
 @import 'media960';
 @import 'media1180';
- 
+
 
 
 /**
- * Swiper 3.0.7
- * Most modern mobile touch slider and framework with hardware accelerated transitions
- * 
- * http://www.idangero.us/swiper/
- * 
- * Copyright 2015, Vladimir Kharlampidi
- * The iDangero.us
- * http://www.idangero.us/
- * 
- * Licensed under MIT
- * 
- * Released on: April 25, 2015
+* Swiper 3.0.7
+* Most modern mobile touch slider and framework with hardware accelerated transitions
+* 
+* http://www.idangero.us/swiper/
+* 
+* Copyright 2015, Vladimir Kharlampidi
+* The iDangero.us
+* http://www.idangero.us/
+* 
+* Licensed under MIT
+* 
+* Released on: April 25, 2015
 */
 .swiper-container{margin:0 auto;position:relative;overflow:hidden;z-index:1}
 .swiper-container-no-flexbox .swiper-slide{float:left}
@@ -365,28 +394,27 @@ input[type="submit"]{
 @keyframes swiper-preloader-spin{100%{transform:rotate(360deg)}
 }
 .swiper-container {
-  width:100%;
-  margin: auto 0;
+width:100%;
+margin: auto 0;
 }
 .swiper-slide {
-	text-align: center;
-	font-size: 18px;
-	padding:20px 80px 40px;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	-webkit-justify-content: center;
-	justify-content: center;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	-webkit-align-items: center;
-	align-items: center;
+text-align: center;
+font-size: 18px;
+padding:20px 80px 40px;
+display: -webkit-box;
+display: -ms-flexbox;
+display: -webkit-flex;
+display: flex;
+-webkit-box-pack: center;
+-ms-flex-pack: center;
+-webkit-justify-content: center;
+justify-content: center;
+-webkit-box-align: center;
+-ms-flex-align: center;
+-webkit-align-items: center;
+align-items: center;
 }
-
+// Fix for IE10
 .swiper-slide p{
-	width: 100%;
-}
+	width: 100%; }
 

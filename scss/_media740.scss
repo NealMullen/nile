@@ -4,31 +4,32 @@
 	  right: 0;
 	  @include rem(width, 110);
 	}
+	
 	header{
 		@include rem(height, 100);
-
-		ul li{
-			@include rem(line-height, 100);
-		}
+			ul li{
+				@include rem(line-height, 100);
+			}
 	}
+
 	.full_site_notice{
 		@include rem(line-height, 100);
 		display: inline;
 	}
-	.column:nth-child(1),.column:nth-child(2),.column:nth-child(3){
-		width:33.333%;
-	}
+
 	#intro{
-	  //background-image:  url(../img/banner_740.jpg);
 	  background: url(../img/banner_740.jpg) no-repeat center center fixed; 
 	  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
 	}
 
 	.menu li+li{
 		@include rem(margin-left, 45);
 	}
 
+	.column:nth-child(1),.column:nth-child(2),.column:nth-child(3){
+		width:33.333%;
+	}
 }

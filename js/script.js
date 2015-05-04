@@ -1,5 +1,4 @@
-pic = new Image();
-pic.src="img/banner_blur.jpg";
+// Polyfills for Swiper functions not recognised in and breaking IE
 
 //http://stackoverflow.com/questions/3629183/why-doesnt-indexof-work-on-an-array-ie8
 if (!Array.prototype.indexOf)
@@ -24,8 +23,6 @@ if (!Array.prototype.indexOf)
     return -1;
   };
 }
-
-
 /* 
  * classList.js: Cross-browser full element.classList implementation.
  * 2014-07-23
@@ -269,11 +266,9 @@ if(typeof String.prototype.trim !== 'function') {
 
 
 
-// Detecting IE
+// Only initiate Swiper code if older than IE9
 var oldIE;
-if ($('html').is('.lt-ie9')) {
-    oldIE = true;
-}
+if ($('html').is('.lt-ie9')) { oldIE = true; }
 if (!oldIE) {
 	/**
 	 * Swiper 3.0.7
@@ -299,11 +294,6 @@ if (!oldIE) {
 	});
 }
 
-
-
-
-
-
 // Mailchimp
 (function($) {
 	window.fnames = new Array(); 
@@ -317,103 +307,95 @@ if (!oldIE) {
 }(jQuery));
 
 
-
-
 $(document).ready(function() {
 
+  // Preload blurred image
+  pic = new Image();
+  pic.src="img/banner_blur.jpg";
+
+
   function goTo(el) {
-   var height = $("header").outerHeight();
-  $("html, body").animate({ scrollTop: $(el).offset().top - height }, 750);    
-}
+    var height = $("header").outerHeight();
+    $("html, body").animate({ scrollTop: $(el).offset().top - height }, 750);    
+  }
 
-// Scroll-to contact section
-$("#contact_link").click(function() {
-    goTo("#contact");
-    return false;
-});
-// Scroll-to contact section
-$(".semicircle").click(function() {
-    goTo("#work_at_nile");
-    return false;
-});
+  // Scroll-to contact section
+  $("#contact_link").click(function() {
+      goTo("#contact");
+      return false;
+  });
+  // Scroll-to contact section
+  $(".semicircle").click(function() {
+      goTo("#work_at_nile");
+      return false;
+  });
 
-
-
-
-  $('#mce-EMAIL').blur(function() {
-      $("#mc_embed_signup").removeClass('focus');
-    })
-    .focus(function() {
-      $("#mc_embed_signup").addClass('focus');
+  // Modernizr - Unless touch screen, add in the header fading effects
+  if (!Modernizr.touch) { 
+    $(document).scroll(function(){
+        var st =$(this).scrollTop();
+        var el = $('#intro'), top = $('h1').offset().top - st;
+        if (top < 300 && !el.is('.blurred')){
+            $(el).addClass('blurred');
+        }
+        if (top > 300 && el.is('.blurred')){
+            $(el).removeClass('blurred');
+        }  
+        var o = (($('h1').offset().top - st) / 200);
+        $('h1').css({ 'opacity' : o });
     });
-
-
-
-
-if (!Modernizr.touch) { 
-
-  $(document).scroll(function(){
-
-      var st =$(this).scrollTop();
-
-      var el = $('#intro'), top = $('h1').offset().top - st;
-      if (top < 300 && !el.is('.bg-black')){
-          $(el).addClass('bg-black');
-      }
-      if (top > 300 && el.is('.bg-black')){
-          $(el).removeClass('bg-black');
-      }  
-
-      var o = (($('h1').offset().top - st) / 200);
-      $('h1').css({ 'opacity' : o });
-
-  });
-
-} 
-
-var $mcj = jQuery.noConflict(true);
-// Customised Mailchimp Message positioning
-// http://designshack.net/articles/css/custom-mailchimp-email-signup-form/
-$(function () {
-  var $form = $('#mc-embedded-subscribe-form');
-  $('#mc-embedded-subscribe').on('click', function(event) {
-  if(event) event.preventDefault();
-    register($form);
-  });
-});
-function register($form) {
-  $.ajax({
-    type: $form.attr('method'),
-    url: $form.attr('action'),
-    data: $form.serialize(),
-    cache       : false,
-    dataType    : 'json',
-    contentType: "application/json; charset=utf-8",
-    error       : function(err) { $('#notification_container').html('<span class="alert">Could not connect to server. Please try again later.</span>'); },
-    success     : function(data) {
-      if (data.result != "success") {
-        var message = data.msg.substring(4);
-        $('#notification_container').html('<span class="response alert">'+message+'</span>');
-      } 
-      else {
-        var message = data.msg;
-        $('#notification_container').html('<span class="response success">'+message+'</span>');
-      }
-    }
-  });
-}
-
-
-if (!Modernizr.svg) {
+  } 
+  // Modernizer - swap out SVG for PNG
+  if (!Modernizr.svg) {
     var imgs = document.getElementsByTagName('img');
     var svgExtension = /.*\.svg$/
     var l = imgs.length;
     for(var i = 0; i < l; i++) {
-        if(imgs[i].src.match(svgExtension)) {
-            imgs[i].src = imgs[i].src.slice(0, -3) + 'png';
-            //console.log(imgs[i].src);
-        }
+      if(imgs[i].src.match(svgExtension)) {
+        imgs[i].src = imgs[i].src.slice(0, -3) + 'png';
+        //console.log(imgs[i].src);
+      }
     }
-}
+  }
+
+
+  // Customised Mailchimp Message positioning
+  // http://designshack.net/articles/css/custom-mailchimp-email-signup-form/
+  $(function () {
+    var $form = $('#mc-embedded-subscribe-form');
+    $('#mc-embedded-subscribe').on('click', function(event) {
+    if(event) event.preventDefault();
+      register($form);
+    });
   });
+  function register($form) {
+    $.ajax({
+      type: $form.attr('method'),
+      url: $form.attr('action'),
+      data: $form.serialize(),
+      cache       : false,
+      dataType    : 'json',
+      contentType: "application/json; charset=utf-8",
+      error       : function(err) { $('#notification_container').html('<span class="alert">Could not connect to server. Please try again later.</span>'); },
+      success     : function(data) {
+        if (data.result != "success") {
+          var message = data.msg.substring(4);
+          $('#notification_container').html('<span class="response alert">'+message+'</span>');
+        } 
+        else {
+          var message = data.msg;
+          $('#notification_container').html('<span class="response success">'+message+'</span>');
+        }
+      }
+    });
+  }
+
+  // Focus on Input for Mailchimp form
+  $('#mce-EMAIL').blur(function() {
+    $("#mc_embed_signup").removeClass('focus');
+  }).focus(function() {
+    $("#mc_embed_signup").addClass('focus');
+  });
+
+});
 
