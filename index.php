@@ -211,7 +211,9 @@ function formatTweet($tweet) {
 	<meta name="description" content="Nile experience and service design create user experience blueprints for products, services and customer flows." />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" href="css/style.css">
-	<!--[if lt IE 9]> <script src="js/modernizr.min.js"></script> <![endif]-->
+	<script src="js/modernizr.min.js"></script>
+	<script src="//use.typekit.net/jwv1yje.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
    <link rel="apple-touch-icon" href="favicon.gif"/>
 </head>
@@ -347,8 +349,6 @@ function formatTweet($tweet) {
 </footer>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="//use.typekit.net/jwv1yje.js"></script>
-<script>try{Typekit.load();}catch(e){}</script>
 <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
 <script src="js/script.min.js"></script>
 </body>

@@ -11,6 +11,14 @@
 		.break{
 			display: block;
 		}
+
+		&.blurred{
+			background: url(../img/banner_blur.jpg) no-repeat center center fixed; 
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
 	}
 
 	a:hover,a:focus,.blk_section a:hover, .blk_section a:focus{
