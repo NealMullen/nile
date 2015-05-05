@@ -16,8 +16,11 @@
 	a:hover,a:focus,.blk_section a:hover, .blk_section a:focus{
 		color:#1c81b3;
 	}
-	.social_list li:hover{
-		opacity:0.5;
+	.social_list li a{
+
+		&.twitter:hover{ background:#31aae1;border-color:#31aae1;}
+		&.linkedin:hover{ background:#0e689b;border-color:#0e689b;}
+		&.facebook:hover{ background:#36589b;border-color:#36589b;}
 	}
 
 	footer a:hover{

@@ -212,12 +212,9 @@ function formatTweet($tweet) {
 	<meta name="description" content="Nile experience and service design create user experience blueprints for products, services and customer flows." />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" href="css/style.css">
-	<script src="js/modernizr.js"></script>
-	<script src="//use.typekit.net/jwv1yje.js"></script>
-	<script>try{Typekit.load();}catch(e){}</script>
 
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
-    <link rel="apple-touch-icon" href="favicon.gif"/>
+   <link rel="apple-touch-icon" href="favicon.gif"/>
 </head>
 <body>
 
@@ -322,9 +319,9 @@ function formatTweet($tweet) {
 			<div class="column">
 				<h3>Get social with us</h3>
 				<ul class="social_list">
-					<li><a href="https://twitter.com/nilesays" title="Visit us on Twitter" target="_blank"><img src="img/twitter_bird_white.svg" alt="Twitter icon"/></a></li>
-					<li><a href="https://www.linkedin.com/company/nile-experience-&-service-design" title="Visit us on Linkedin" target="_blank"><img src="img/linkedin_logo.svg" alt="Linkedin icon"/></a></li>
-					<li><a href="https://www.facebook.com/NileHQ" title="Visit us on Facebook" target="_blank"><img src="img/facebook_icon.svg" alt="Facebook icon"/></a></li>
+					<li><a href="https://twitter.com/nilesays" title="Visit us on Twitter" target="_blank" class="twitter"><img src="img/twitter_bird_white.svg" alt="Twitter icon"/></a></li>
+					<li><a href="https://www.linkedin.com/company/nile-experience-&-service-design" title="Visit us on Linkedin" target="_blank" class="linkedin"><img src="img/linkedin_logo.svg" alt="Linkedin icon"/></a></li>
+					<li><a href="https://www.facebook.com/NileHQ" title="Visit us on Facebook" target="_blank" class="facebook"><img src="img/facebook_icon.svg" alt="Facebook icon"/></a></li>
 				</ul>
 			</div>
 			<div class="column">
@@ -351,6 +348,9 @@ function formatTweet($tweet) {
 </footer>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/modernizr.min.js"></script>
+<script src="//use.typekit.net/jwv1yje.js"></script>
+<script>try{Typekit.load();}catch(e){}</script>
 <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
 <script src="js/script.min.js"></script>
 </body>
