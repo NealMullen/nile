@@ -1,5 +1,4 @@
 <?php
-
 /**
  * twitter-timeline-php : Twitter API 1.1 user timeline implemented with PHP, a little JavaScript, and web intents
  * 
