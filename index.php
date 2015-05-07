@@ -206,9 +206,9 @@ function formatTweet($tweet) {
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>Nile</title>
+	<title>Nile | An experience and service design consultancy</title>
 	<meta name="keywords" content="Experience design, service design, usability, usability testing, user experience, Information architecture, accessibility audits" />
-	<meta name="description" content="Nile experience and service design create user experience blueprints for products, services and customer flows." />
+	<meta name="description" content="Nile is an experience and service design consultancy. We design services that are easy and effective for everyone." />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" href="css/style.css">
 	<script src="js/modernizr.min.js"></script>
@@ -231,7 +231,8 @@ function formatTweet($tweet) {
 </header>
 
 <section id="intro">
-	<h1>We design services to make them easier <span class="break">and more effective for everyone</span></h1>
+	 
+	<h1>We design services that are easy <span class="break">and effective for everyone</span></h1>
 	<img class="fullbackground" src="img/banner.jpg" />
 	<div class="gradient"></div>
 </section>
@@ -327,7 +328,7 @@ function formatTweet($tweet) {
 			</div>
 			<div class="column">
 				<h3>Join our mailing list</h3>
-				<p>We'll keep you up to date with our insights and events</p>
+				<p>We'll let you know when our new site is live plus add you to our newsletter list</p>
 				<!-- Mailchimp Embed -->
 				<div id="mc_embed_signup" class="clearfix">
 					<form action="//nealmullen.us10.list-manage.com/subscribe/post-json?u=c12bf4e1e9019e45472c8bbbc&amp;id=1fe13d1fdc&amp;c=?" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
