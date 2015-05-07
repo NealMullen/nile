@@ -215,7 +215,7 @@ function formatTweet($tweet) {
 	<script src="//use.typekit.net/jwv1yje.js"></script>
 	<script>try{Typekit.load();}catch(e){}</script>
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
-   <link rel="apple-touch-icon" href="favicon.gif"/>
+  <link rel="apple-touch-icon" href="favicon.gif"/>
 </head>
 <body>
 
@@ -305,7 +305,7 @@ function formatTweet($tweet) {
 					<li>London</li>
 					<li><a href="https://maps.google.com/maps?q=N1 6AS" target="_blank" title="Search for us on Google Maps">N1 6AS</a></li>
 					<li><a href="mailto:hello@nilehq.com" title="Send us an email" class="email">hello@nilehq.com</a></li>
-					<li><a href="tel:020 3393 0930" title="Give us a call">020 3393 0930</a></li>
+					<li><a href="tel:+44 20 3393 0930" title="Give us a call">+44 20 3393 0930</a></li>
 				</ul>
 			</div>
 			<div class="column">
@@ -331,13 +331,12 @@ function formatTweet($tweet) {
 				<p>We'll let you know when our new site is live plus add you to our newsletter list</p>
 				<!-- Mailchimp Embed -->
 				<div id="mc_embed_signup" class="clearfix">
-					<form action="//nealmullen.us10.list-manage.com/subscribe/post-json?u=c12bf4e1e9019e45472c8bbbc&amp;id=1fe13d1fdc&amp;c=?" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+					<form action="//nilehq.us5.list-manage.com/subscribe/post-json?u=7a53a942e5b89e502038ff725&amp;id=c7ac0817a4&amp;c=?" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 				    <div id="mc_embed_signup_scroll clearfix">
 							<div class="mc-field-group">
-								<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL">
+								<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
 							</div>
-				    <div style="position: absolute; left: -5000px;">
-				    	<input type="text" name="b_c12bf4e1e9019e45472c8bbbc_1fe13d1fdc" tabindex="-1" value=""></div>
+				    <div style="position: absolute; left: -5000px;"><input type="text" name="b_7a53a942e5b89e502038ff725_c7ac0817a4" tabindex="-1" value=""></div>
 				    	<div class="clear"><input type="submit" value="Go" name="go" id="mc-embedded-subscribe" class="button"></div>
 				    </div>
 					</form>
@@ -349,8 +348,20 @@ function formatTweet($tweet) {
 	<small>&copy; 2015 Nile all rights reserved</small>
 </footer>
 
+
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
 <script src="js/script.min.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-54514951-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
 </body>
 </html>
