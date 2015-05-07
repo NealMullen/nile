@@ -412,7 +412,7 @@ function fader() {
         if (elView > 0) { // Top of DIV above bottom of window.
             opacity = 1 / (wh + $(this).height()) * elView * 3
             if (opacity < 1) // Bottom of DIV below top of window.
-                $(this).css('opacity', opacity);
+                $(this).css('opacity', 1);
     }
     
     });
@@ -424,7 +424,7 @@ $(document).bind('scroll', fader);
   $(window).scroll(function() {
     var oVal;
     oVal = $(window).scrollTop() / 240;
-    return $(".blur").css("opacity", oVal);
+    return $(".blur_bg").css("opacity", oVal);
   });
 
 }).call(this);
