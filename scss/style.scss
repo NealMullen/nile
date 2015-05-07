@@ -115,14 +115,14 @@ header{
 
 #intro{
 	position:relative;
-	background: url(../img/banner_480.jpg) no-repeat center center; 
+	//background: url(../img/banner_480.jpg) no-repeat center center; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 	width:100%;
 	text-align: center;
-	@include rem(padding, 160 0 70);
+	//@include rem(padding, 160 0 70);
 	//background-image:  url(../img/banner_480.jpg);
 	// background-size:   cover;                    
 	// background-repeat: no-repeat;
