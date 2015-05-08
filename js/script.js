@@ -400,12 +400,15 @@ $(document).ready(function() {
 
 
 });
+
+if (!oldIE) {
+  // http://www.pencilscoop.com/2014/02/recreating-mediums-parallax-blur-effect/
 function fader() {
     var r = $('.blurred'),
         wh = $(window).height(),
         dt = $(document).scrollTop(),
         elView, opacity;
-    
+
     // Loop elements with class "blurred"
     r.each(function() {
         elView  = wh - ($(this).offset().top - dt + 300);
@@ -414,11 +417,9 @@ function fader() {
             if (opacity < 1) // Bottom of DIV below top of window.
                 $(this).css('opacity', 1);
     }
-    
     });
 }
 $(document).bind('scroll', fader);
-
 
 (function() {
   $(window).scroll(function() {
@@ -428,3 +429,4 @@ $(document).bind('scroll', fader);
   });
 
 }).call(this);
+}
