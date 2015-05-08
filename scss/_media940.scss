@@ -13,31 +13,27 @@
 		}
 
 		> .background_image {
-  position: absolute;
-  top:0;
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  background-position: center center fixed;
-
-  &.initial_bg{
-   // background-image: url('../img/banner.jpg')
-  }
-  &.blur_bg{
-    opacity: 0;
-  	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  	filter: alpha(opacity=0);
-    background: url('../img/banner_blur.jpg') no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-  }
-}
+  		position: absolute;
+  		top:0;
+  		width: 100%;
+  		height: 100%;
+  		background-repeat: no-repeat;
+  		-webkit-background-size: cover;
+  		-moz-background-size: cover;
+  		background-size: cover;
+  		background-position: center center fixed;
+	  &.blur_bg{
+	    opacity: 0;
+	  	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	  	filter: alpha(opacity=0);
+	    background: url('../img/banner_blur.jpg') no-repeat center center fixed;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+	  }
 	}
+}
 
 	a:hover,a:focus,.blk_section a:hover, .blk_section a:focus{
 		color:#1c81b3;

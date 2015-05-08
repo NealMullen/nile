@@ -115,7 +115,6 @@ header{
 
 #intro{
 	position:relative;
-	//background: url(../img/banner_480.jpg) no-repeat center center; 
 	background: url('../img/banner_480.jpg') no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -124,11 +123,7 @@ header{
 	width:100%;
 	text-align: center;
 	opacity: 1 !important;
-	@include rem(padding, 180 0 40);
-	//background-image:  url(../img/banner_480.jpg);
-	// background-size:   cover;                    
-	// background-repeat: no-repeat;
-	//background-position: center center;  
+	@include rem(padding, 180 0 40); 
 	overflow:hidden;
 
 	> .background_image {

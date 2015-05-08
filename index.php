@@ -231,22 +231,11 @@ function formatTweet($tweet) {
 </header>
 
 <section id="intro">
-	
-  	<!--<div class="background_image initial_bg"></div>-->
-  	<div class="background_image blur_bg"></div>
-  
+  <div class="background_image blur_bg"></div>
   <h1>We design services that are easy <span class="break">and effective for everyone</span></h1>
 	<img class="fullbackground" src="img/banner.jpg" />
 	<div class="gradient"></div>
 </section>
-<!--
-<section id="intro">
-	<h1>We design services that are easy <span class="break">and effective for everyone</span></h1>
-	<img class="fullbackground" src="img/banner.jpg" />
-	<div class="gradient"></div>
-	</div>
-</section>
--->
 
 <section class="blk_section blk_white" id="new_website">
 	<div class="container">
