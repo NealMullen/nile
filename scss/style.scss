@@ -52,7 +52,7 @@ h1{
 	z-index:18;
 	@include rem(font-size, 40);
 		&, .break{
-			font-weight: 300;
+			font-weight: 100;
 			line-height: 1em;
 		}
 }
