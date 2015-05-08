@@ -115,7 +115,7 @@ header{
 
 #intro{
 	position:relative;
-	background: url('../img/banner_480.jpg') no-repeat center center fixed;
+	background: url('../img/banner_480.jpg') no-repeat top center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -135,7 +135,7 @@ header{
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
-  background-position: center center fixed;
+  background-position: top center fixed;
 
   &.initial_bg{
    // background-image: url('../img/banner.jpg')
@@ -144,7 +144,7 @@ header{
     opacity: 0;
   	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   	filter: alpha(opacity=0);
-    background: url('../img/banner_480_blur.jpg') no-repeat center center fixed;
+    background: url('../img/banner_480_blur.jpg') no-repeat top center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;

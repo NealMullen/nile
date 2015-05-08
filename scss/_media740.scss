@@ -18,7 +18,7 @@
 	}
 
 	#intro{
-	  background: url(../img/banner_740.jpg) no-repeat center center fixed; 
+	  background: url(../img/banner_740.jpg) no-repeat top center fixed; 
 	  -webkit-background-size: cover;
 	  -moz-background-size: cover;
 	  -o-background-size: cover;
@@ -32,13 +32,13 @@
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
-  background-position: center center fixed;
+  background-position: top center fixed;
 
   &.blur_bg{
    opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
-   background: url('../img/banner_740_blur.jpg') no-repeat center center fixed;
+   background: url('../img/banner_740_blur.jpg') no-repeat top center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
