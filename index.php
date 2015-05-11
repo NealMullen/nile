@@ -224,7 +224,7 @@ function formatTweet($tweet) {
 		<p class="full_site_notice">Full site launching Summer 2015</p>
 		<img src="img/nile_logo.svg" id="logo" alt="Nile logo"/>
 		<ul class="menu">
-			<li><a href="#" title="View our archived site">Archived site</a></li>
+			<li><a href="http://archive.nilehq.com" title="View our archived site">Archived site</a></li>
 			<li><a href="#contact" title="Contact us" id="contact_link">Contact</a></li>
 		</ul>
 	</div>
@@ -240,14 +240,14 @@ function formatTweet($tweet) {
 <section class="blk_section blk_white" id="new_website">
 	<div class="container">
 		<h2 class="heading">We&rsquo;re working on a new website</h2>
-		<p>We&rsquo;ve been very busy designing innovative new services for our clients, so our website is now a little out of date. We&rsquo;re working on a shiny new one. Meanwhile, the <a href="#" title="View our old website">old one is here</a> if you need it.</p>
+		<p>We&rsquo;ve been very busy designing innovative new services for our clients, so our website is now a little out of date. We&rsquo;re working on a shiny new one. Meanwhile, the <a href="http://archive.nilehq.com" title="View our old website">old one is here</a> if you need it.</p>
 	</div>	
 </section>
 
 <section class="blk_section blk_blue" id="what_we_do">
 	<div class="container">
 		<h2 class="heading">What we do</h2>
-		<p>Nile is an <b>experience and service design consultancy</b>. We design in partnership with people, businesses and governments to bring services to life - services built to thrive in an increasingly digital world. And we ensure the development of culture and capabilities to sustain them.</p>
+		<p>Nile is an <b>experience and service design consultancy</b>. We design simple and meaningful services, working in partnership with people, businesses and governments. Our work leaves a legacy of sustainable services designed to thrive in an increasingly digital world. </p>
 	</div>	
 	<div class="semicircle"><img src="img/arrow.svg" alt="Arrow icon"/></div>
 </section>
@@ -255,7 +255,7 @@ function formatTweet($tweet) {
 <section class="blk_section blk_white" id="work_at_nile">
 	<div class="container">
 		<h2 class="heading">Work at Nile</h2>
-		<p>We value individuality and teamwork in equal measure, so we are always on the lookout for skilled and motivated team members. Is that you? Check out <a href="#" title="View our current job vacancies">our job vacancies</a>. We&rsquo;d love to hear from you.</p>
+		<p>We value individuality and teamwork in equal measure, so we are always on the lookout for skilled and motivated team members. Is that you? Check out <a href="http://archive.nilehq.com/jobs/" title="View our current job vacancies">our job vacancies</a>. We&rsquo;d love to hear from you.</p>
 	</div>	
 </section>
 

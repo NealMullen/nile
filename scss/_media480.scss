@@ -11,8 +11,23 @@
 
 	#intro{
 		@include rem(padding, 200 0 70);
+		background: url('../img/banner_480.jpg') no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+		> .background_image {
+		  background: url('../img/banner_480_blur.jpg') no-repeat center center;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
 	}
 	.gradient{
 		height:50%;
 	}
+
+
 }

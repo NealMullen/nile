@@ -313,7 +313,6 @@ $(document).ready(function() {
   pic = new Image();
   pic.src="img/banner_blur.jpg";
 
-
   function goTo(el) {
     var height = $("header").outerHeight();
     $("html, body").animate({ scrollTop: $(el).offset().top - height }, 750);    
@@ -330,8 +329,6 @@ $(document).ready(function() {
       return false;
   });
 
-  // Modernizr - Unless touch screen, add in the header fading effects
-  if (!Modernizr.touch) { 
     $(document).scroll(function(){
         var st =$(this).scrollTop();
         var el = $('#intro'), top = $('h1').offset().top - st;
@@ -344,7 +341,7 @@ $(document).ready(function() {
         var o = (($('h1').offset().top - st) / 200);
         $('h1').css({ 'opacity' : o });
     });
-  } 
+
   // Modernizer - swap out SVG for PNG
   if (!Modernizr.svg) {
     var imgs = document.getElementsByTagName('img');
