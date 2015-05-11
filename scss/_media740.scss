@@ -18,12 +18,13 @@
 	}
 
 	#intro{
-	  background: url(../img/banner_740.jpg) no-repeat center center fixed; 
+	  background: url(../img/banner_740.jpg) no-repeat top center fixed; 
 	  -webkit-background-size: cover;
 	  -moz-background-size: cover;
 	  -o-background-size: cover;
 	  background-size: cover;
 	> .background_image {
+
   		position: absolute;
   		top:0;
   		width: 100%;
