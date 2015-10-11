@@ -167,10 +167,10 @@ if (class_exists('TwitterAPITimeline') === false) {
  *
 **/
 $settings = array(
-	'consumer_key' => "txw93sNW4Izd3QuXlmSFZeayz",
-	'consumer_secret' => "LtlnTVn3s4VxToTujRFF0VQxMqrXRS6h5ouLI31DtMkuyF0ljI",
-	'oauth_access_token' => "258118357-BHHFt9K8Y4Fj6nvhVg3eGnKl2jILhdIjycEVcqpZ",
-	'oauth_access_token_secret' => "XOlk45BCkOn2wtCogrwaBvlyPT5vw3rILefm9qwiJz6j4"
+	'consumer_key' => "zzz",
+	'consumer_secret' => "zzz",
+	'oauth_access_token' => "zzz",
+	'oauth_access_token_secret' => "zzz"
 );
 // Require the OAuth class
 $getfield = '?screen_name=nilesays&count=5';
